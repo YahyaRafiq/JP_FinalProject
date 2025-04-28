@@ -1,42 +1,305 @@
-#image{
-    background-size: cover;
-    background-repeat: no-repeat;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.marquee {
-    width: 100%;
-    overflow: hidden;
-    background: #f8f8f8;
-    color: #111;
-    white-space: nowrap;
-    box-sizing: border-box;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: sans-serif;
-  }
-  marquee span{
-    padding: 50px;
-}
-  .marquee-content {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 15s linear infinite;
-  }
+#navbar{
+  height: 10vh;
 
-  @keyframes marquee {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
-.blink {
-    animation: blinker 1.5s linear infinite;
-    color: red;
-    font-family: sans-serif;
+}
+#navbarSupportedContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 05vh;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+coll-12 .content{
+  position: relative;
+
+}
+.carousel-caption h5{
+position: relative;
+bottom: 280px;
+color: white;
+font-size: 35px;
+}
+.carousel-caption p{
+  position: relative;
+  bottom: 280px;
+  color: white;
+  font-size: 25px;
+}
+.carousel-caption button{
+  position: relative;
+  bottom: 250px;
+  border-radius: 50px;
+  padding: 15px 50px;
+  border: none;
+}
+.carousel-caption button:hover{
+  background-color: #0c0f22;
+  border: 1px white;
+  color: white;
+}
+.card{
+  height: 40vh;
+}
+.card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content{
+  padding: 10px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#card-section{
+  background-color: #F7F7FB;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  font-weight: bold;
 }
 
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7FB;
+  color: #0C0F22;
+}
+.about-section{
+  margin: 100px 0px;
+  background-color: #D4CBC6;
+  background: url(./images/abstract-seamless-pattern-geometric-background-with-polygonal-lines-stylish-texture_120542-1836.avif);
+}
+.about-section-overlay{
+  margin: 100px 0px;
+  background-color: rgba(256, 256, 256, 0.7);}
+.about-section button{
+  padding: 10px 35px;
+  border-radius: 10px;
+  border: 1px solid #0c0f22;
+  margin-bottom: 50px;
+}
+.about-section button:hover{
+  background-color: #0c0f22;
+  color: white;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-img{
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.category{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.xclusive{
+  background-color: #0C0F22;
+  color: #0C0F22;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 6px 25px 0 #0c0f22;
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+cursor: pointer;
+}
+.xclusive:hover{
+  background-color: #0C0F22;
+  color: white;
+}
+.xclusive a{
+  text-decoration: none;
+  color: #0C0F22;
+}
+.xclusive a:hover{
+  color: white;
+}
+.scents{
+  background-color: #0C0F22;
+  color: #0C0F22;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 6px 25px 0 #0c0f22;
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.scents:hover{
+  background-color: #0C0F22;
+  color: white;
+}
+.scents a{
+  text-decoration: none;
+  color: #0C0F22;
+}
+.scents a:hover{
+  color: white;
+}
+.wear{
+  color: #0C0F22;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 6px 25px 0 #0c0f22;
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.wear:hover{
+  background-color: #0C0F22;
+  color: white;
+}
+.wear a{
+  text-decoration: none;
+  color: #0C0F22;
+}
+.wear a:hover{
+  color: white;
+}
+.modal-dialog{
+  width: 40%;
+  border: 1px solid #D4CBC6;
+  gap: 20px;
+}
+.modal-card{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+/* contactussec start */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-section {
+  background-image: url(./images/contactusbackground.png);
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.contact-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background: white;
+  color: black;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.096);
+  padding: 30px;
+  border-radius: 8px;
+  color: #333;
+}
+
+.contact-form .form-group {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="text"] {
+  flex: 1;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #444;
+}
+
+/* contactsecend */
+/* footer start*/
+footer{
+  background-color: #0c0f22;
 }
