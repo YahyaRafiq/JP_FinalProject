@@ -3,20 +3,62 @@
   padding: 0px;
   box-sizing: border-box;
 }
-#navbar{
-  height: 10vh;
-
+/* Navbar and general styles */
+#navbar {
+  height: auto;
 }
-#navbarSupportedContent{
+
+#navbarSupportedContent {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 05vh;
 }
-body{
+
+body {
   padding: 0;
   margin: 0;
 }
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Customized Dropdown */
+.dropdown-menu {
+  background-color: white; /* Default: white */
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item {
+  color: #0c0f22; /* Default text = navbar background color */
+  padding: 12px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #0c0f22; /* Hover background = navbar color */
+  color: white;
+}
+
+/* Responsive for small devices */
+@media (max-width: 991px) {
+  #navbarSupportedContent {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navbar-nav .nav-link {
+    margin: 10px 0;
+  }
+}
+/* hero-section Start */
 coll-12 .content{
   position: relative;
 
@@ -78,6 +120,8 @@ body {
   background-color: #F7F7FB;
   color: #0C0F22;
 }
+/* hero-section End */
+/* aboutsection start */
 .about-section{
   margin: 100px 0px;
   background-color: #D4CBC6;
@@ -184,15 +228,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .wear a:hover{
   color: white;
 }
-.modal-dialog{
-  width: 40%;
-  border: 1px solid #D4CBC6;
-  gap: 20px;
-}
-.modal-card{
-  display:flex;
-  flex-wrap: wrap;
-}
+/* aboutsection end */
 
 /* contactussec start */
 
