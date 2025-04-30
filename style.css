@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 /* Navbar and general styles */
+
 #navbar {
   height: auto;
 }
@@ -13,21 +14,26 @@
   justify-content: center;
   align-items: center;
 }
-
+.nav-brand img{
+  height: 10px;
+  width: 10px;
+}
 body {
   padding: 0;
   margin: 0;
 }
 
-/* Navbar links */
+#navbarScroll {
+  margin-left: 60%;
+}
 .navbar-nav .nav-link {
   margin: 0 10px;
   font-size: 20px;
 }
 
-/* Customized Dropdown */
+
 .dropdown-menu {
-  background-color: white; /* Default: white */
+  background-color: white; 
   border: none;
   border-radius: 8px;
   padding: 0;
@@ -36,18 +42,17 @@ body {
 }
 
 .dropdown-item {
-  color: #0c0f22; /* Default text = navbar background color */
+  color: #0c0f22; 
   padding: 12px 20px;
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown-item:hover {
-  background-color: #0c0f22; /* Hover background = navbar color */
+  background-color: #0c0f22; 
   color: white;
 }
 
-/* Responsive for small devices */
 @media (max-width: 991px) {
   #navbarSupportedContent {
     flex-direction: column;
@@ -59,7 +64,7 @@ body {
   }
 }
 /* hero-section Start */
-coll-12 .content{
+.content{
   position: relative;
 
 }
@@ -124,8 +129,8 @@ body {
 /* aboutsection start */
 .about-section{
   margin: 100px 0px;
-  background-color: #D4CBC6;
   background: url(./images/abstract-seamless-pattern-geometric-background-with-polygonal-lines-stylish-texture_120542-1836.avif);
+  background-size:contain; 
 }
 .about-section-overlay{
   margin: 100px 0px;
@@ -157,7 +162,6 @@ body {
   padding-top: 20px;
 }
 .xclusive{
-  background-color: #0C0F22;
   color: #0C0F22;
   border-radius: 10px;
   padding: 20px;
@@ -168,39 +172,43 @@ backdrop-filter: blur( 1.5px );
 -webkit-backdrop-filter: blur( 1.5px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-cursor: pointer;
 }
 .xclusive:hover{
   background-color: #0C0F22;
-  color: white;
 }
 .xclusive a{
   text-decoration: none;
-  color: #0C0F22;
+  color: #000;
+}
+.xclusive:hover a{
+  text-decoration: none;
+  color: #fff;
 }
 .xclusive a:hover{
   color: white;
 }
 .scents{
-  background-color: #0C0F22;
   color: #0C0F22;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   background: rgba( 255, 255, 255, 0.15 );
-  box-shadow: 0 6px 25px 0 #0c0f22;
-  backdrop-filter: blur( 1.5px );
-  -webkit-backdrop-filter: blur( 1.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+box-shadow: 0 6px 25px 0 #0c0f22;
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .scents:hover{
   background-color: #0C0F22;
-  color: white;
 }
 .scents a{
   text-decoration: none;
-  color: #0C0F22;
+  color: #000;
+}
+.scents:hover a{
+  text-decoration: none;
+  color: #fff;
 }
 .scents a:hover{
   color: white;
@@ -216,14 +224,20 @@ backdrop-filter: blur( 1.5px );
 -webkit-backdrop-filter: blur( 1.5px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 .wear:hover{
   background-color: #0C0F22;
-  color: white;
+ 
+  
 }
 .wear a{
   text-decoration: none;
-  color: #0C0F22;
+  color: #000;
+}
+.wear:hover a{
+  text-decoration: none;
+  color: #fff;
 }
 .wear a:hover{
   color: white;
@@ -243,6 +257,7 @@ body, html {
   background-image: url(./images/contactusbackground.png);
   background-size: cover;
   background-position: bottom;
+  margin-top: 100px;
   color: white;
   height: 100vh;
   display: flex;
